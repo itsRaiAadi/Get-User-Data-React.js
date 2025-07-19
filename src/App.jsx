@@ -13,6 +13,7 @@ function App() {
 
     setUserData([
       {
+        image: userDetails.image,
         name: userDetails.firstName + " " + userDetails.lastName,
         age: userDetails.age,
         gender: userDetails.gender,
@@ -28,6 +29,8 @@ function App() {
 
   const [userData, setUserData] = useState([
     {
+      image:
+        "https://cdn.pixabay.com/photo/2021/09/20/03/24/skeleton-6639547_640.png",
       name: "Aditya Rai",
       age: 24,
       gender: "Male",
@@ -51,6 +54,11 @@ function App() {
             {
               return (
                 <div className="flex flex-col gap-2">
+                  <img
+                    src={item.image}
+                    alt="Loading"
+                    className="w-[100px] h-[100px] border-none outline-none rounded-full object-cover "
+                  />
                   <p className="text-2xl">
                     <b>Name:</b> {item.name}
                   </p>
