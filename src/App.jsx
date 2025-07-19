@@ -50,13 +50,25 @@ function App() {
           {userData.map((item) => {
             {
               return (
-                <div>
-                  <p className="text-2xl">Name: {item.name}</p>
-                  <p className="text-2xl">Age: {item.age}</p>
-                  <p className="text-2xl">Gender: {item.gender}</p>
-                  <p className="text-2xl">DOB: {item.dateOfBirth}</p>
-                  <p className="text-2xl">Phone: {item.phone}</p>
-                  <p className="text-2xl">Email: {item.email}</p>
+                <div className="flex flex-col gap-2">
+                  <p className="text-2xl">
+                    <b>Name:</b> {item.name}
+                  </p>
+                  <p className="text-2xl">
+                    <b>Age:</b> {item.age}
+                  </p>
+                  <p className="text-2xl">
+                    <b>Gender:</b> {item.gender}
+                  </p>
+                  <p className="text-2xl">
+                    <b>DOB:</b> {item.dateOfBirth}
+                  </p>
+                  <p className="text-2xl">
+                    <b>Phone:</b> {item.phone}
+                  </p>
+                  <p className="text-2xl">
+                    <b>Email:</b> {item.email}
+                  </p>
                 </div>
               );
             }
